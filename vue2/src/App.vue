@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "settings-tools/_all-settings";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
