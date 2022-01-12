@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@mozaic-ds/vue": "^0.9.0",
+    "@mozaic-ds/vue": "^0.10.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
