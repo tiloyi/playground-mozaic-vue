@@ -2,16 +2,36 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
+    {{ textvalue }}
+    <br />
+    {{ textvalue.length }}
+    <br />
+    <input
+      type="number"
+      name="nativefield"
+      id="nativefield"
+      v-model="textvalue"
+    />
+    <br />
+    <MTextInput
+      type="number"
+      name="mozaicfield"
+      id="mozaicfield"
+      v-model="textvalue"
+      @blur="onBlur"
+    />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import MTextInput from "@mozaic-ds/vue/src/components/textinput/MTextInput.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    MTextInput,
   },
 };
 </script>
