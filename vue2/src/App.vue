@@ -18,6 +18,7 @@
       name="mozaicfield"
       id="mozaicfield"
       v-model="textvalue"
+      @input="onInput"
       @blur="onBlur"
     />
   </div>
@@ -32,6 +33,19 @@ export default {
   components: {
     HelloWorld,
     MTextInput,
+  },
+  data() {
+    return {
+      textvalue: 234,
+    };
+  },
+  methods: {
+    onInput(event) {
+      console.log(event);
+    },
+    onBlur(event) {
+      console.log(event);
+    },
   },
 };
 </script>
