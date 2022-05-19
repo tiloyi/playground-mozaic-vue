@@ -1,0 +1,40 @@
+name: 🚀 Feature request
+description: Suggest an idea for this project
+labels: [":rocket: feat"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hi there! :wave: :smiley:
+        Thank you for taking the time to fill out this feature request and helping us expand/improve the Design System!
+        > To expedite issue processing please search open and closed issues before submitting a new one.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem or what you are missing
+    validations:
+      required: true
+  - type: checkboxes
+    id: mozaic-vue-version
+    attributes:
+      label: Mozaic-Vue version
+      description: Which Mozaic-Vue version is concerned?
+      options:
+        - label: Mozaic-Vue 2
+        - label: Mozaic-Vue 3
+  - type: textarea
+    id: describe-solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+  - type: textarea
+    id: describe-alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+  - type: textarea
+    id: additional-comments
+    attributes:
+      label: Additional comments
+      description: Add any other comments about the problem here.
